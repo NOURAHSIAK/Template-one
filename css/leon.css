@@ -12,6 +12,9 @@
     --moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Work Sans', sans-serif;
     
@@ -383,5 +386,62 @@ body {
 }
 /* End About */
 /* Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+    text-align: center;
+}
+.contact .contact-content {
+    margin-top: 100px;
+}
+.contact .contact-content .mail p {
+    color:var(--secondary-color);
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 15px;
 
+}
+.contact .contact-content a {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    color: var(--main-color);
+    text-decoration-line: none;
+}
+.contact .contact-content .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+.contact .contact-content .social i {
+    margin-left:5px;
+    color: var(--secondary-color);
+}
+.contact .contact-content .social p {
+    padding-right: 5px;
+}
+@media (max-width:767px) {
+    .contact .contact-content .mail p,
+    .contact .contact-content a {
+        font-size: 25px;
+    }
+
+}
 /* End Contact */
+/* START Footer */
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400px;
+}
+.footer span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+/* End footer */
